@@ -796,4 +796,77 @@ body {
     fill: var(--white-title-color);
 }
 
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    padding: 72px 24px 24px 24px;
+    
+}
+
+.modal-text {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--titele-color);
+
+}
+
+.form-label {
+    height: 55px;
+    margin-bottom: 8px;
+}
+.modal-form-desc {
+    display: block;
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.04em;
+    color: var(--customers-color);
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-brand-color);
+}
+
+.form-input:focus + .modal-icon {
+    fill: var(--primary-brand-color);
+}
+
+.input-wrapper {
+    position: relative;
+    display: block;
+}
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    
+    display: block;
+    background-color: transparent;
+}
+
+.form-message {
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    resize: none;
+
+}
 
