@@ -446,11 +446,31 @@
               </li>
             </ul>
           </div>
+
+          
+          <div class="subscribe">
+            <h3 class="title">Subscribe</h3>
+            <form class="subscribe-form">
+              <input 
+                type="email" 
+                class="subscribe-input"
+                name="email-subscribe"
+                placeholder="E-mail"
+              >
+            
+            <button type="submit" class="btn-subscribe">
+              Subscribe
+              <svg class="icon-frame" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+            </form>
+          </div>
         </div>
       </section>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-btn-icon" width="8" height="8">
@@ -517,11 +537,19 @@
             id="user-policy" 
             type="checkbox" 
             name="user-policy"
-            class="modal-checkbox">
+            id="user-policy"
+            value="tru"
+            class="modal-checkbox visually-hidden">
           <label 
             for="user-policy" 
-            class="modal-check-desc">I accept the terms and conditions of the 
-            <a href="">Privacy Policy</a>
+            class="modal-check-desc">
+            <span class="check-box">
+              <svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-Vector1"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the 
+            <a class="police-link" href="">Privacy Policy</a>
           </label>
           <button type="submit" class="btn-submit">Send</button>
 
